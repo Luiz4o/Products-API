@@ -48,7 +48,7 @@ public class ProdutoController {
 
 	}
 
-	@GetMapping(value = "/busca-todos")
+	@GetMapping
 	public ResponseEntity<List<Produto>> buscaTodosProdutos() {
 
 		List<Produto> produtos = service.findAll();

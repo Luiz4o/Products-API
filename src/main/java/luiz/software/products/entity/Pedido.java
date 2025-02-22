@@ -1,9 +1,6 @@
 package luiz.software.products.entity;
 
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.ManyToMany;
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 import org.hibernate.annotations.Fetch;
@@ -14,6 +11,7 @@ import java.util.Set;
 
 @Getter
 @Setter
+@Entity
 public class Pedido {
 
     @Id
